@@ -1,0 +1,159 @@
+   *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    :root{
+        --primary-color:#edf2fc;
+        --secondary-color:#212121;
+    }
+    .dark-mode{
+        --primary-color:#000106;
+        --secondary-color:#fff;
+    }
+    body{
+        background-color:var(--primary-color);
+    }
+    header{
+        width: 100%;
+        height: 100vh;
+       
+    }
+    .logo{
+        font-size: 2em;
+        font-weight: bolder;
+        color:var(--secondary-color) ;
+    }
+    .logo span{
+        color: #e67e22;
+    }
+    nav{
+        width: 100%;
+        height: 8em;
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        flex-wrap: wrap;
+        padding: 0 70px;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .menu a{
+        text-decoration: none;
+        color:var(--secondary-color) ;
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding:10px 20px;
+    }
+    .menu a:first-child{
+        color: #e67e22;
+    }
+    .menu a:hover{
+        color: #e67e22;
+    }
+    .search{
+        position: relative;
+    }
+    .search input{
+        padding: 10px 20px;
+        border-radius: 15px;
+        border: 1px solid grey;
+        /* YAD RKHE OUTLINE */
+        outline: none;   
+    }
+    /* ICON KO INPUT TYPE KE ANDAR LANE K LIYE */
+    #icon{
+        position: absolute;
+        right: 0;
+        padding: 10px 20px;
+    }
+    .moon_icon{
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        color: var(--secondary-color);
+    }
+    .container{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      
+    }
+    .left{
+        flex-basis: 40%;
+    }
+    .right{
+        flex-basis: 50%;
+    }
+    .right img{
+        width: 90%;
+    }
+    .left h1{
+        font-size: 3em;
+        margin-bottom: 10px;
+        color: var(--secondary-color);
+    }
+    /* line height mtlb line ke bich ka difference */
+    .left p{
+        line-height: 2.2em;
+        color: var(--secondary-color);
+    }
+    .left h1 span{
+        color: #e67e22;
+    }
+    .left a{
+        text-decoration: none;
+        color: var(--primary-color);
+        background-color:#e67e22;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+    .icons{
+        margin-top: 3em;
+        font-size: 2em;
+        color: var(--secondary-color);
+        transition: 0.4s;
+    }
+    .icons i:hover{
+        background-color:rgb(79, 79, 207);
+        color: var(--primary-color);
+        border-radius: 10px;
+    }
+    #dark-mode-images{
+        width: 40px;
+        height:40px;
+
+    }
+
+    /* RESPONSIVE BNANE KE LIYE */
+    @media (max-width:700px){
+        .logo{
+            width: 100%;
+            text-align: center;
+            font-size: 2.2em;
+        }
+        .search{
+            display: none;
+        }
+        nav{
+            padding: 0 15px;
+        }
+        .menu{
+            width: 100%;
+            text-align: center;
+        }
+        .container{
+            text-align: center;
+            padding: 20px 200px;
+            flex-direction: column-reverse;
+        }
+        
+    }
+
+ 
